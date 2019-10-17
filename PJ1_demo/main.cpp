@@ -147,7 +147,7 @@ int main(int argc, char** argv) {
             }
         }
 
-        if(n == WS || n == COMMENT || n == NOMATCHINGCOMMENT){
+        if(n == WS || n == COMMENT || n == NOMATCHINGCOMMENT || n == STRING || n == NOMATCHINGSTRING){
             for(int i=0;i<len;i++){
                 if(yytext[i] == '\t') col += 4;
                 else if(yytext[i] == '\n') {col = 1; row++;}
