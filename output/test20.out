@@ -1,0 +1,28 @@
+Row  Col  Type                Token/Error
+1    31   error               Integer Overflow
+4    1    real                123456789012345678901234567890.0
+6    43   error               Invalid character \t or \n
+9    1    error               String is too long
+12   1    string              "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345"
+15   1    string              ""
+18   1    error               Identifier is too long
+21   1    identifier          x12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234
+24   1    identifier          if
+24   4    identifier          x
+24   5    operator            <
+24   6    integer             7
+24   7    identifier          then
+24   12   identifier          y
+24   13   operator            :=
+24   15   identifier          y
+24   16   operator            +
+24   17   integer             17
+27   1    real                123.
+27   5    identifier          x
+30   1    error               Unprintable character
+32   1    identifier          xx
+33   10   identifier          yy
+37   1    error               No matching string
+39   1    error               No matching comment
+Tokens: 80
+Errors: 7
