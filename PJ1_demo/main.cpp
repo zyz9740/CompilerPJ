@@ -53,10 +53,12 @@ int main(int argc, char** argv) {
                         errMessage = "Integer Overflow";
                     }
                 }
+                tokenCount++;
                 break;
             case REAL:
                 type = "real";
                 token = yytext;
+                tokenCount++;
                 break;
             case WS:
                 type = "whitespace";
@@ -76,6 +78,7 @@ int main(int argc, char** argv) {
     	    case RK:
         		type = "reserved keyword";
         		token = yytext;
+                tokenCount++;
         		break;
     	    case ID:
         		type = "identifier";
@@ -84,14 +87,17 @@ int main(int argc, char** argv) {
                     error = true;
                     errMessage = "Identifier is too long";
                 }
+                tokenCount++;
         		break;
     	    case OP:
         		type = "operator";
         		token = yytext;
+                tokenCount++;
         		break;
     	    case DELIM:
         		type = "delimiter";
         		token = yytext;
+                tokenCount++;
         		break;
     	    case STRING:
         		type = "string";
@@ -112,6 +118,7 @@ int main(int argc, char** argv) {
                         }
                     }
                 }
+                tokenCount++;
         		break;
             case NOMATCHINGSTRING:
                 type = "string";
@@ -122,10 +129,12 @@ int main(int argc, char** argv) {
             case BOOLEAN:
                 type = "boolean";
                 token = yytext;
+                tokenCount++;
                 break;
             case NIL:
                 type = "nil";
                 token = yytext;
+                tokenCount++;
                 break;
             default:
                 // LEFT case, only contain 1 character
@@ -156,9 +165,7 @@ int main(int argc, char** argv) {
         }else{
             col += len;
         }
-
         if(error == true) errCount++;
-        tokenCount++;
     }    
     // count num of tokens and errors?
     cout << "Tokens: " << tokenCount << endl << "Errors: " << errCount << endl; 

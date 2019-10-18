@@ -1,0 +1,123 @@
+Row  Col  Type                Token/Error
+4    1    reserved keyword    PROGRAM
+4    9    reserved keyword    IS
+5    5    reserved keyword    VAR
+5    9    identifier          I
+5    10   delimiter           ,
+5    12   identifier          J
+5    13   delimiter           ,
+5    15   identifier          ANSWER
+5    22   delimiter           :
+5    24   identifier          INTEGER
+5    32   operator            :=
+5    35   integer             0
+5    36   delimiter           ;
+6    5    reserved keyword    PROCEDURE
+6    15   identifier          FACTORIAL
+6    24   delimiter           (
+6    25   delimiter           )
+6    27   reserved keyword    IS
+7    5    reserved keyword    PROCEDURE
+8    11   identifier          FACT
+8    15   delimiter           (
+8    16   delimiter           )
+8    18   reserved keyword    IS
+8    21   reserved keyword    BEGIN
+9    9    identifier          MULT
+9    13   delimiter           (
+9    14   delimiter           )
+9    15   delimiter           ;
+10   9    reserved keyword    IF
+10   12   identifier          J
+10   14   operator            <>
+10   17   identifier          I
+10   19   reserved keyword    THEN
+10   24   identifier          J
+10   26   operator            :=
+10   29   identifier          J
+10   31   operator            +
+10   33   integer             1
+10   34   delimiter           ;
+10   36   identifier          FACT
+10   40   delimiter           (
+10   41   delimiter           )
+10   42   delimiter           ;
+10   44   reserved keyword    END
+10   47   delimiter           ;
+11   7    reserved keyword    END
+11   10   delimiter           ;
+12   7    identifier          MULT
+12   11   delimiter           (
+12   12   delimiter           )
+12   14   reserved keyword    IS
+12   17   reserved keyword    BEGIN
+13   13   identifier          ANSWER
+13   20   operator            :=
+13   23   identifier          ANSWER
+13   30   operator            *
+13   32   identifier          J
+13   33   delimiter           ;
+14   11   reserved keyword    END
+14   14   delimiter           ;
+15   5    reserved keyword    BEGIN
+16   5    identifier          ANSWER
+16   12   operator            :=
+16   15   integer             1
+16   16   delimiter           ;
+17   5    identifier          J
+17   7    operator            :=
+17   10   integer             1
+17   11   delimiter           ;
+18   5    identifier          FACT
+18   9    delimiter           (
+18   10   delimiter           )
+18   11   delimiter           ;
+19   5    reserved keyword    END
+19   8    delimiter           ;
+20   1    reserved keyword    BEGIN
+21   5    reserved keyword    WRITE
+21   11   delimiter           (
+21   12   string              "The first 5 factorials are (in descending order):"
+21   63   delimiter           )
+21   64   delimiter           ;
+22   5    identifier          I
+22   7    operator            :=
+22   10   integer             5
+22   11   delimiter           ;
+23   5    reserved keyword    LOOP
+24   5    reserved keyword    IF
+24   8    identifier          I
+24   10   operator            <=
+24   13   integer             0
+24   15   reserved keyword    THEN
+24   20   reserved keyword    EXIT
+24   24   delimiter           ;
+24   26   reserved keyword    END
+24   29   delimiter           ;
+25   9    identifier          FACTORIAL
+25   18   delimiter           (
+25   19   delimiter           )
+25   20   delimiter           ;
+26   9    reserved keyword    WRITE
+26   14   delimiter           (
+26   15   string              "FACTORIAL("
+26   27   delimiter           ,
+26   29   identifier          I
+26   30   delimiter           ,
+26   32   string              ") = "
+26   38   delimiter           ,
+26   40   identifier          ANSWER
+26   46   delimiter           )
+26   47   delimiter           ;
+27   5    identifier          I
+27   7    operator            :=
+27   10   identifier          I
+27   12   operator            -
+27   14   integer             1
+27   15   delimiter           ;
+28   5    reserved keyword    END
+28   8    delimiter           ;
+29   1    reserved keyword    END
+29   4    delimiter           ;
+Tokens: 120
+Errors: 0

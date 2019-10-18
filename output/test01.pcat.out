@@ -49,5 +49,5 @@ Row  Col  Type                Token/Error
 10   35   delimiter           ;
 11   1    reserved keyword    END
 11   4    delimiter           ;
-Tokens: 111
+Tokens: 50
 Errors: 0
